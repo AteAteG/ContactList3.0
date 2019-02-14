@@ -2,6 +2,7 @@ package com.contactlist.spring.model;
 
 import java.io.Serializable;
 import java.util.List;
+import com.fasterxml.jackson.annotation.JsonManagedReference;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -35,6 +36,7 @@ public class Phone implements Serializable  {
 	//bi-directional many-to-one association to Persona
 		@ManyToOne
 		@JoinColumn(name="idpersona")
+		@JsonBackReference
 	private Contact contact;
 	
 	public Phone() {

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+//import {Router}
 
 @Component({
   selector: 'app-contact',
@@ -6,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./contact.component.css']
 })
 export class ContactComponent implements OnInit {
-
+contacts : Contact
   constructor() { }
 
   ngOnInit() {

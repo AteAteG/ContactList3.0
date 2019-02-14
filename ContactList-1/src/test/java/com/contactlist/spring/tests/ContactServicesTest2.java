@@ -92,7 +92,7 @@ public class ContactServicesTest2 {
 		iContactDao.delete(contact); //lo borramos cada vez que realiza un test para no dejar rastro y que ensucie los demas
 	}
 	
-	//PRUEBA ATENEA
+	//PRUEBA ATE
 	@Test
     //añado un contacto
     public void testAddContactSize2() throws Exception {

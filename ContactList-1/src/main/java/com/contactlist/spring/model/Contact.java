@@ -10,6 +10,7 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
+import com.fasterxml.jackson.annotation.JsonBackReference;
 
 
 import javax.persistence.NamedQuery;
@@ -48,11 +49,11 @@ public class Contact implements Serializable {
 	
 	//bi-directional many-to-one association to Telefono
 		@OneToMany(mappedBy="contact")
+		@JsonManagedReference
 		private List<Phone> phones;
 		
 	
 	public Contact() {
-		
 	}
 
 	public int getContactId() {
