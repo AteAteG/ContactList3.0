@@ -1,7 +1,8 @@
 import { Contact } from './contact.model';
 
 export class Phone {
-    phoneId: bigint;
+    //PROBLEM . REIVISAR TIPO DATOS
+    phoneId: string;
     phoneNumber: string;
     Contact: Contact;
 }
