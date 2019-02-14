@@ -1,3 +1,26 @@
-<p>
-  show-contact-list works!
-</p>
+<div class="col-md-6">
+  <h2> Contact Details</h2>
+  
+  <table class="table table-striped">
+    <thead>
+    <tr>
+      <th class="hidden">Id</th>
+      <th>FirstName</th>
+      <th>LastName</th>
+      <th>LastLastName</th>
+      <th>DNI</th>
+      <th>BirthDate</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let contact of contacts">
+      <td class="hidden">{{contact.id}}</td>
+      <td>{{contact.FirstName}}</td>
+      <td>{{contact.LastName}}</td>
+      <td>{{contact.LastLastName}}</td>
+      <td>{{contact.DNI}}</td>
+      <td>{{contact.BirthDate}}</td>
+    </tr>
+    </tbody>
+  </table>
+  </div>
